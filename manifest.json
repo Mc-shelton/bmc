@@ -1,0 +1,15 @@
+{
+    "manifest_version":3,
+    "name":"BMC Autorefresh",
+    "version":"1.0.0",
+    "content_scripts":[
+        {
+            "matches":["http://remedy.safaricom.co.ke/*","https://remedy.safaricom.co.ke/*"],
+            "js":["content.js", "main.js"],
+            "run_at":"document_end"
+        }
+    ]
+
+
+
+}
