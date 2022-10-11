@@ -8,6 +8,7 @@ const refresh = () => {
     if (toggle == 1) {
       toggle = 0;
       alert("Auto refresh started");
+      incid[15].style.backgroundColor = 'green'
       interv = setInterval(() => {
         button.click();
         console.log('refreshed')
@@ -15,23 +16,25 @@ const refresh = () => {
 
       var bodyElement = document.getElementsByTagName("div");
       var linkElement = document.getElementsByTagName("a");
-    //   bodyElement[1].addEventListener('click', ()=>{
-    // clearInterval(interv)
-    // toggle = 1
-    // })
-    bodyElement[1].addEventListener('dblclick', ()=>{
+      
+      bodyElement[1].addEventListener('dblclick', () => {
         clearInterval(interv)
+        incid[15].style.backgroundColor = 'inherit'
         toggle = 1
-        })
-        for (value of linkElement){
-            if(value.id != 'WIN_0_304352241'){
-        value.addEventListener('click', ()=>{
+      })
+      for (value of linkElement) {
+        if (value.id != 'WIN_0_304352241') {
+          value.addEventListener('click', () => {
             clearInterval(interv)
+            incid[15].style.backgroundColor = 'inherit'
             toggle = 1
-            })}}
+          })
+        }
+      }
     } else {
       toggle = 1;
       clearInterval(interv);
+      incid[15].style.backgroundColor = 'inherit'
       alert("Auto refresh closed");
     }
   });
