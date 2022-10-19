@@ -8,8 +8,7 @@
             "js":["content.js", "main.js"],
             "run_at":"document_end",
             "authors":[{
-                "name": "Shelton Omondi",
-                "email":"sheltonnito@gmail.com"
+                "name": "Service Desk"
             }]
         }
     ]
