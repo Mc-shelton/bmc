@@ -8,7 +8,7 @@
             "js":["content.js", "main.js"],
             "run_at":"document_end",
             "authors":[{
-                "name": "Service Desk"
+                "name": "Service Desk - msomondi"
             }]
         }
     ]
